@@ -2,88 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registration</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f0f0f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+@media (min-width:310px) and (max-width:768px){
+  .container {
+    background-color: aqua;
+    padding-left: 30px;
+    padding-right: 57px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    margin: -100px;
+    position: absolute; /* оставить только это */
+  }
+}
 
-    .container {
-      background: black;
-      padding-left : 30px;
-      padding-right: 57px;
-      padding-bottom: 20px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      width: 330px;
-    }
-
-    h2 {
-      text-align: center;
-    }
-
-    input[type="text"],
-    input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-
-    button {
-      width: 100%;
-      padding: 10px;
-      background: #ffffff;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-
-    .switch {
-      text-align: center;
-      margin-top: 15px;
-      cursor: pointer;
-      color: #007bff;
-      text-decoration: underline;
-    }
-
-    .error, .success {
-      text-align: center;
-      margin-bottom: 10px;
-      display: none;
-    }
-
-    .error {
-      color: red;
-    }
-
-    .success {
-      color: green;
-    }
-    @media (min-width:310px) and (max-width:768px){
-      .container {
-      background: black;
-      padding-left : 30px;
-      padding-right: 57px;
-      padding-bottom: 20px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      width: 100vw;
-    }
-    
-
-    }
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .container {
+    margin: 5%;
+    left: -4%;
+    position: relative;
+    background: black;
+    padding-left : 30px;
+    padding-right: 57px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 270px;
+  }
+  h2 {
+    text-align: center;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    background: #ffffff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .switch {
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+  }
+  .error, .success {
+    text-align: center;
+    margin-bottom: 10px;
+    display: none;
+  }
+  .error {
+    color: red;
+  }
+  .success {
+    color: green;
+  }
   </style>
 </head>
 <body>
+  <script>
+    window.onload = function() {
+  switchForm('login');
+}
+  </script>
   <div class="container">
     <!--enter -->
     <div id="loginForm">
@@ -136,7 +138,7 @@
 
   if (users[username] && users[username] === password) {
     localStorage.setItem('loggedInUser', username);
-    window.location.href = 'MainPage1.html';
+    window.location.href = 'http://127.0.0.1:5500/MainPage1.html';
   } else {
     error.style.display = 'block';
   }
