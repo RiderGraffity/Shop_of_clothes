@@ -339,7 +339,7 @@ z-index: 1000;
     height: 113px;
     position: relative;
     left: -7px;
-    top: -5px;
+    top: 5px;
     transition: all 1.4s ease 0s;
     text-align: center;
 }
