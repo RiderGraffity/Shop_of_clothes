@@ -227,15 +227,15 @@ z-index: 1000;
     .carousel{
         height: 38vh;
         position: absolute;
-        top: 10vh;
+        top: 16vh;
         z-index: 100000000000000000000000000000000000000;
     }
     .carousel img{
     z-index: 10000000000000000000000000000000000000000;
         position: relative;
-        top: -10vh;
+        top: -4vh;
         width: 100vw;
-        height: 68vh;
+        height: 62vh;
         object-fit:fill;
 
     }
@@ -281,6 +281,7 @@ z-index: 1000;
     position: relative;
     top: 27vh;
     flex-flow: wrap;
+    z-index: 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
 }
     .futer_flex img{
         position: relative;
