@@ -511,7 +511,7 @@ input{
         position: fixed;
         top: 0;
         z-index: 1000000;
-        right: -350px; 
+        left: -350px;
         background-color: #000000;
         color: white;
         transition: 0.3s; 

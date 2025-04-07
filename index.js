@@ -1,15 +1,15 @@
 function togglePanel() {
-  let panel = document.getElementById("sidePanel");
-  let panelPosition = panel.style.right;
+  const panel = document.getElementById("sidePanel");
+  const panelPosition = panel.style.left;
   if (panelPosition === "-285px" || panelPosition === "") {
-    panel.style.right = "0";
+    panel.style.left = "0";
   } else  {
-    panel.style.right = "-285px";
+    panel.style.left = "-285px";
   }
-  if (panelPosition === "-350px" || panelPosition === "") {
-      panel.style.right = "0";
+  if (panelPosition === "100vw + 350px" || panelPosition === "") {
+      panel.style.left = "0";
     } else {
-      panel.style.right = "-350px";
+      panel.style.left = "100vw + 350px";
     }
 } 
 
