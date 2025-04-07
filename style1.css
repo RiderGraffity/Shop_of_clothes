@@ -177,7 +177,7 @@ z-index: 1000;
     grid-template-rows: 1fr 1fr ;
     display: grid;
     position: relative;
-    top:5vh;
+    top:10vh;
     left: calc(16vw + 10px);
     width: 67vw;
     height: 84vh;
@@ -197,8 +197,8 @@ z-index: 1000;
     width: 110%;
     height: 83px;
     position: relative;
-    left: -67px;
-    top: 115px;
+    left: -97px;
+    top: 145px;
     transition: all 1.4s ease 0s;
 }
 .box_grid_card_bord{
@@ -217,7 +217,7 @@ z-index: 1000;
 /* futer   */
 .futer_flex{
     position: relative;
-    top:118px;
+    top:127px;
 }
 /* panel */
 .side-panel {
@@ -284,7 +284,7 @@ z-index: 1000;
         color: white;
         z-index: 1000;
         position: relative;
-        top: -0vh;
+        top: 1vh;
         flex-flow: wrap;
     }
         .futer_flex img{
@@ -318,8 +318,8 @@ z-index: 1000;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     display: grid;
     position: relative;
-    top:0vh;
-    left: 10px;
+    top:-13vh;
+    left: 25px;
     width: 67vw;
     height: 300vh;
     transition: all 1.4s ease 0s;
@@ -327,7 +327,7 @@ z-index: 1000;
 }
 .box_grid_card{
     overflow: hidden;
-    padding-left: 27px;
+    padding-left: 40px;
     padding-top: 0px;
     transition: all 1.4s ease 0s;
 }
@@ -338,8 +338,8 @@ z-index: 1000;
     width: 110%;
     height: 113px;
     position: relative;
-    left: -27px;
-    top: 15px;
+    left: -7px;
+    top: 5px;
     transition: all 1.4s ease 0s;
     text-align: center;
 }
