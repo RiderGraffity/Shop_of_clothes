@@ -198,7 +198,7 @@ z-index: 1000;
     height: 83px;
     position: relative;
     left: -97px;
-    top: 105px;
+    top: 65px;
     transition: all 1.4s ease 0s;
 }
 .box_grid_card_bord{
@@ -339,7 +339,7 @@ z-index: 1000;
     height: 113px;
     position: relative;
     left: -7px;
-    top: 5px;
+    top: 15px;
     transition: all 1.4s ease 0s;
     text-align: center;
 }
