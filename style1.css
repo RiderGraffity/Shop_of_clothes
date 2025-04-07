@@ -205,7 +205,7 @@ z-index: 1000;
     text-align: center;
 }
 .box_grid_card:hover .box_grid_card_bord{
-    top: 10px;
+    top: 30px;
 }
 .box_grid_card_bord h2{
     color: #000;
