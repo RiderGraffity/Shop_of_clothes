@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: black;
+      padding-left : 30px;
+      padding-right: 57px;
+      padding-bottom: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 330px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #ffffff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+
+    .switch {
+      text-align: center;
+      margin-top: 15px;
+      cursor: pointer;
+      color: #007bff;
+      text-decoration: underline;
+    }
+
+    .error, .success {
+      text-align: center;
+      margin-bottom: 10px;
+      display: none;
+    }
+
+    .error {
+      color: red;
+    }
+
+    .success {
+      color: green;
+    }
+    @media (min-width:310px) and (max-width:768px){
+      .container {
+      background: black;
+      padding-left : 30px;
+      padding-right: 57px;
+      padding-bottom: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 100vw;
+    }
+    
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!--enter -->
+    <div id="loginForm">
+      <h2>Enter</h2>
+      <div class="error" id="loginError">Not right login</div>
+      <input type="text" id="loginUsername" placeholder="Login">
+      <input type="password" id="loginPassword" placeholder="Password">
+      <button  style="color: black; margin-left: 6px;" onclick="login()">Enter</button>
+      <div class="switch" onclick="switchForm('register')">Don't have an account? Register</div>
+    </div>
+
+    <!-- registration -->
+    <div id="registerForm" style="display: none;">
+      <h2>Regestration</h2>
+      <div class="error" id="registerError">Login is already taken</div>
+      <div class="success" id="registerSuccess">Registration successful!</div>
+      <input type="text" id="regUsername" placeholder="Create login">
+      <input type="password" id="regPassword" placeholder="Create password">
+      <button style="color: black;" onclick="register()">Regestation</button>
+      <div class="switch" onclick="switchForm('login')">Already have an account? Login</div>
+    </div>
+  </div>
+
+  <script>
+    function switchForm(form) {
+      document.getElementById('loginForm').style.display = form === 'login' ? 'block' : 'none';
+      document.getElementById('registerForm').style.display = form === 'register' ? 'block' : 'none';
+      document.getElementById('loginError').style.display = 'none';
+      document.getElementById('registerError').style.display = 'none';
+      document.getElementById('registerSuccess').style.display = 'none';
+    }
+
+    function getUsers() {
+      const users = localStorage.getItem('users');
+      return users ? JSON.parse(users) : {};
+    }
+
+    function saveUser(username, password) {
+      const users = getUsers();
+      users[username] = password;
+      localStorage.setItem('users', JSON.stringify(users));
+    }
+
+    function login() {
+  const username = document.getElementById('loginUsername').value;
+  const password = document.getElementById('loginPassword').value;
+  const error = document.getElementById('loginError');
+
+  const users = getUsers();
+
+  if (users[username] && users[username] === password) {
+    localStorage.setItem('loggedInUser', username);
+    window.location.href = 'http://127.0.0.1:5500/MainPage1.html';
+  } else {
+    error.style.display = 'block';
+  }
+}
+
+
+
+    function register() {
+      const username = document.getElementById('regUsername').value;
+      const password = document.getElementById('regPassword').value;
+      const error = document.getElementById('registerError');
+      const success = document.getElementById('registerSuccess');
+
+      const users = getUsers();
+
+      if (users[username]) {
+        error.style.display = 'block';
+        success.style.display = 'none';
+      } else {
+        saveUser(username, password);
+        error.style.display = 'none';
+        success.style.display = 'block';
+
+        
+        document.getElementById('regUsername').value = '';
+        document.getElementById('regPassword').value = '';
+      }
+    }
+  </script>
+</body>
+</html>

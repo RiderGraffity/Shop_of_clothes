@@ -1,0 +1,553 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;  
+}
+body{
+    overflow-x: hidden;
+}
+/* informaton desk */
+.black{
+    width: 100vw;
+    height: 4vh;
+    background-color: black;
+    position: absolute;
+    left: -0px;
+    top: -0px;
+    position: fixed;
+    z-index: 10000;
+}
+@keyframes black_text1 {
+from{
+    opacity: 0;
+}   
+to{
+    opacity: 1;
+}
+}
+@keyframes black_text2 {
+    from{
+        opacity: 1;
+    }   
+    to{
+        opacity: 0;
+    }
+    }
+.black_text1{
+    font-size: 75%;
+    color: white;
+    text-align: center;
+    animation: black_text1 2s  ease-in-out infinite  alternate ;
+    opacity: 0;
+    position: relative;
+    top: 10px;
+    z-index: 10000;
+}
+.black_text2{
+    opacity: 0;
+    position: relative;
+    color: white;
+    font-size: 75%;
+    text-align: center;
+    top: -25px;
+    animation: black_text2 2s ease-in-out infinite  alternate ;
+    z-index: 10000;
+}
+.black_text_a{
+    color: white;
+    border: none;
+    
+}
+/* Head */
+.head_flex{
+    display: flex;
+    position: absolute;
+    top: 8vh;
+    width: 70vw;
+    height: 6vh ;
+    left: 15vw;
+    justify-content: space-around;
+    justify-items:center ;
+    align-items: center;
+    color: black;
+    z-index: 1000;
+}
+.head_flex button{
+    border: none;
+    background-color: transparent;
+}
+.head_flex a{
+    color: #000;
+    text-decoration: none;
+}
+input:focus{
+    outline: none;
+  }
+.head_flex_col{
+    font-size: 20px;
+}
+.head_flex_col1{
+    font-size: 20px;
+    border-bottom: 2px solid black;
+}
+.head_flex_col:hover{
+    border-bottom: 2px solid black;
+}
+input{
+    border: none;
+    width: 18vw;
+    border-bottom: 2px solid black;;
+    background-color: transparent;
+}
+.Head_button{
+    background-color: gray;
+    border: none;
+}
+/*categories-----------------------------------------------------------------*/
+.categories_flex{
+
+    display:  flex;
+    position: absolute;
+    font-size: 13px;
+    font-weight: 500;
+    top: 9vh;
+    width: 70vw;
+    height: 6vh ;
+    left: calc( 15vw - 5px );
+    justify-content: space-around;
+    justify-items:center ;
+    align-items: center;
+    color: black;
+    text-transform: uppercase;
+}
+.categories_flex a{
+    color: #505050;
+    text-decoration: none;
+}
+/*carousel*/
+.carousel img{
+    position: relative;
+    top: 14vh;
+    width: 100vw;
+    height: 94vh;
+    object-fit:fill;
+}
+.carousel a{
+    font-family: "Blackadder ITC";
+    font-size: 100px;
+    text-decoration: none;
+    color:white;
+}
+/*futer*/
+.futer_flex{
+background-color:black ;
+width: 100vw;
+height: 6vh;
+display: flex;
+font-size: 25px;
+justify-content: space-around;
+justify-items:center ;
+align-items: center;
+color: white;
+z-index: 1000;
+}
+.futer_flex img{
+    position: relative;
+    z-index: 1000000000000000000000000;
+    width:36px;
+    height: 36px;
+    border-radius: 50%;
+}
+/* *{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* informaton desk */
+.black{
+    width: 100vw;
+    height: 4vh;
+    background-color: black;
+    position: absolute;
+    left: -0px;
+    top: -0px;
+    position: fixed;
+    z-index: 1000;
+}
+@keyframes black_text1 {
+from{
+    opacity: 0;
+}   
+to{
+    opacity: 1;
+}
+}
+@keyframes black_text2 {
+    from{
+        opacity: 1;
+    }   
+    to{
+        opacity: 0;
+    }
+    }
+.black_text1{
+    font-size: 75%;
+    color: white;
+    text-align: center;
+    animation: black_text1 2s  ease-in-out infinite  alternate ;
+    opacity: 0;
+    position: relative;
+    top: 10px;
+}
+.black_text2{
+    opacity: 0;
+    position: relative;
+    color: white;
+    font-size: 75%;
+    text-align: center;
+    top: -25px;
+    animation: black_text2 2s ease-in-out infinite  alternate ;
+}
+.black_text_a{
+    color: white;
+    border: none;
+    
+}
+/* Head */
+.Special_head_of_card{
+    font-size: 30px;
+     text-align: center;
+      color: #000;position: relative;
+      top: 90px;
+}
+
+.head_flex{
+    display: flex;
+    position: absolute;
+    top: 4vh;
+    width: 70vw;
+    height: 6vh ;
+    left: 15vw;
+    justify-content: space-around;
+    justify-items:center ;
+    align-items: center;
+    color: black;
+    z-index: 1000;
+}
+.head_flex button{
+    border: none;
+    background-color: transparent;
+}
+.head_flex a{
+    color: #000;
+    text-decoration: none;
+}
+input:focus{
+    outline: none;
+  }
+.head_flex_col{
+    font-size: 20px;
+}
+.head_flex_col1{
+    font-size: 20px;
+    border-bottom: 2px solid black;
+}
+.head_flex_col:hover{
+    border-bottom: 2px solid black;
+}
+input{
+    border: none;
+    width: 18vw;
+    border-bottom: 2px solid black;;
+    background-color: transparent;
+}
+.Head_button{
+    background-color: gray;
+    border: none;
+}
+
+/* Cards */
+.box_grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    display: grid;
+    position: relative;
+    top:10vh;
+    left: calc(16vw + 10px);
+    width: 67vw;
+    height: 84vh;
+    transition: all 1.4s ease 0s;
+    gap: 15px 15px;
+}
+.box_grid_card{
+    overflow: hidden;
+    padding-left: 27px;
+    padding-top: 0px;
+    transition: all 1.4s ease 0s;
+}
+.box_grid img{
+    position: relative;
+    width: 110%;
+    height: 100%;
+    left: -27px;
+    z-index: -1000;
+}
+.box_grid_card_bord{
+    width: 110%;
+    height: 183px;
+    position: relative;
+    left: -27px;
+    top: 40px;
+    transition: all 1s ease 0s;
+    background-color: white ;
+    text-align: left;
+    padding: 10px;
+}
+.box_grid_card:hover .box_grid_card_bord{
+    top: -60px;
+}
+.box_grid_card_bord h2{
+    position: relative;
+    top: -140px;
+    color: #000;
+    font-size: 17px;
+}
+.box_grid_card_bord h4{
+    font-size: 17px;
+    color: #5f5f5f;
+}
+/* box_grid_flex */
+.box_grid_card:hover .box_grid_flex{
+    opacity: 1;
+} 
+.box_grid_flex{
+    opacity: 0;
+    display: flex;
+    position: relative;
+    width: 110%;
+    height: 83%;
+    top: -145px;
+    transition: all 1s ease 0s;
+}
+.box_grid_card_bord input{
+    position: relative;
+    top: 0px;
+    left: 30px;
+    border: none    ;
+    background-color: #a3a3a3;
+    width: 60%;
+}
+/* checkbox */
+.check_box{
+    width: 16vw;
+    height: 100vh;
+    position:absolute;
+    top: 38px;
+    padding: 40px;
+    padding-top: 10px;
+}
+.check_box div{
+    margin-bottom: -10px;
+    
+}
+label{
+    position: relative;
+}
+.check_box input{
+    position: relative;
+    top: -25px;
+    left: -90px;
+    margin-bottom: -10px;
+}
+
+
+/* futer   */
+.futer_flex{
+    position: relative;
+    top: 95px;
+
+}
+/* panel */
+.side-panel {
+    padding: 20px;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    z-index: 1000000;
+    right: -285px; 
+    background-color: #000000;
+    color: white;
+    transition: 0.3s; 
+    padding: 20px;
+  }
+  @media (min-width:310px) and (max-width:768px){
+     /* Head */
+     .head_flex{
+
+        text-align: center;
+        display: flex;
+        position: absolute;
+        top: 4vh;
+        width:250px;
+        height: 18vh ;
+        left: 16vw;
+        justify-content: space-around;
+        justify-items:center ;
+        align-items: center;
+        color: black;
+        z-index: 1000;
+        flex-flow: wrap;
+        position: relative;
+        
+        z-index: 100000000000000000000000000000000000000000000000;
+    }
+    .head_flex_col,.head_flex_col1{
+
+        margin: 20px;
+    }
+    .format320{
+        position: relative;
+        left: 60px;
+        z-index: 100000000000000000000000000000000000000000000000;
+    }
+    /*categories-----------------------------------------------------------------*/
+    .categories_flex{
+
+        opacity: 0;
+
+  }
+ /* panel */
+ .side-panel {
+    padding: 20px;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    z-index: 1000000;
+    right: -350px; 
+    background-color: #000000;
+    color: white;
+    transition: 0.3s; 
+    padding: 20px;
+    position: relative;
+    z-index: 1000000000000000000000000000000000000000000000000000000000000000000000000;
+    top: -114px;
+}
+/* checkbox */
+.check_box{
+    width: 16vw;
+    height: 100vh;
+    position:absolute;
+    top: 38px;
+    padding: 40px;
+    padding-top: 10px;
+}
+.check_box div{
+    margin-bottom: -10px;
+    
+}
+label{
+    position: relative;
+}
+.check_box input{
+    position: relative;
+    top: -25px;
+    left: -90px;
+    margin-bottom: -10px;
+}
+
+/* Cards */
+.box_grid{
+grid-template-columns: 300px ;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+display: grid;
+position: relative;
+top:55vh;
+left: 10px;
+width: 67vw;
+height: 300vh;
+transition: all 1.4s ease 0s;
+gap: 25px 25px;
+}
+.box_grid_card{
+overflow: hidden;
+padding-left: 27px;
+padding-top: 0px;
+transition: all 1.4s ease 0s;
+}
+.Special_head_of_card{
+    position: relative;
+    top: 0px;
+}
+.box_grid_card_bord img{
+    height: 190%;
+}
+
+
+.box_grid_card_bord{
+    padding: 10px;
+width: 110%;
+height: 113px;
+position: relative;
+left: -27px;
+top: 25px;
+transition: all 1.4s ease 0s;
+text-align: center;
+}
+
+.box_grid_card:hover .box_grid_card_bord{
+top: -60px;
+z-index: 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+}
+.box_grid_card_bord h2{
+    position: relative;
+    top: -75px;
+color: #000;
+}
+.box_grid_card_bord h4{
+font-size: 17px;
+color: #5f5f5f;
+
+    position: relative;
+    top: -170px;
+}
+/* check box */
+.color{
+position: relative;
+top:270px;
+left: 30px;
+}
+.size{
+    position: relative;
+    top:0px;
+    left: 200px;    
+}
+.material{
+    position: relative;
+    left: 120px;
+}
+ /*futer*/
+ .futer_flex{
+    padding: 10px;
+    background-color:black ;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    font-size: 25px;
+    justify-content: space-around;
+    justify-items:center ;
+    align-items: center;
+    color: white;
+    z-index: 1000;
+    position: relative;
+    top: 56vh;
+    flex-flow: wrap;
+}
+    .futer_flex img{
+        position: relative;
+        z-index: 1000000000000000000000000;
+        width:36px;
+        height: 36px;
+        border-radius: 50%;
+    }
+
+}
+
+
