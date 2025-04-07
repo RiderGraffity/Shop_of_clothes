@@ -431,25 +431,21 @@ label{
     top: -114px;
 }
 /* checkbox */
-.check_box{
+/* .check_box{
     width: 16vw;
     height: 100vh;
     position:absolute;
     top: 38px;
     padding: 40px;
     padding-top: 10px;
-}
-.check_box div{
-    margin-bottom: -10px;
-    
-}
+} */
 label{
     position: relative;
 }
 .check_box input{
     position: relative;
     top: -25px;
-    left: -90px;
+    left: -50px;
     margin-bottom: -10px;
 }
 
@@ -459,8 +455,8 @@ grid-template-columns: 300px ;
 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 display: grid;
 position: relative;
-top:55vh;
-left: 10px;
+top:30vh;
+left: 40px;
 width: 67vw;
 height: 300vh;
 transition: all 1.4s ease 0s;
@@ -512,16 +508,17 @@ color: #5f5f5f;
 .color{
 position: relative;
 top:270px;
-left: 30px;
+left: 0px;
 }
 .size{
     position: relative;
-    top:0px;
-    left: 200px;    
+    top:6px;
+    left: 110px;    
 }
 .material{
-    position: relative;
-    left: 120px;
+    position: absolute;
+    left: 250px;
+    top: 280px;
 }
  /*futer*/
  .futer_flex{
@@ -537,7 +534,7 @@ left: 30px;
     color: white;
     z-index: 1000;
     position: relative;
-    top: 56vh;
+    top: 33vh;
     flex-flow: wrap;
 }
     .futer_flex img{
