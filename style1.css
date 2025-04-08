@@ -195,11 +195,11 @@ z-index: 1000;
 
 .box_grid_card_bord{
     width: 110%;
-    height: 183px;
+    height: 153px;
     position: relative;
     z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
     left: -27px;
-    transform: translateY(-10px);
+    transform: translateY(10px);
     top: 20px;
     transition: all 1s ease 0s;
 
