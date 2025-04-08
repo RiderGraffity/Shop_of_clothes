@@ -195,17 +195,17 @@ z-index: 1000;
 
 .box_grid_card_bord{
     width: 110%;
-    height: 83px;
+    height: 183px;
     position: relative;
-    left: -67px;
+    left: -27px;
     top: 40px;
-    transition: all 1.4s ease 0s;
-}
-.box_grid_card_bord{
-    text-align: center;
+    transition: all 1s ease 0s;
+    background-color: white ;
+    text-align: left;
+    padding: 10px;
 }
 .box_grid_card:hover .box_grid_card_bord{
-    top: -50px;
+    top: -60px;
 }
 .box_grid_card_bord h2{
     color: #000;
