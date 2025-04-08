@@ -199,10 +199,10 @@ z-index: 1000;
     position: relative;
     z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
     left: -27px;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
     top: 20px;
     transition: all 1s ease 0s;
-    background-color: white ;
+
     text-align: left;
     padding: 10px;
 }
